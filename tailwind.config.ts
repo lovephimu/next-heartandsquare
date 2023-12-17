@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
@@ -8,13 +8,26 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        mainBlue: '#6BF1F0',
+        transitionBlue: '#30B2DC',
+        contrastBlue: '#30B2DC',
+        textBlue: '#1D4775',
+        textYellow: '#F9E000',
+      },
+      fontFamily: {
+        'roboto-slab-100': ['Roboto Slab Thin', 'sans-serif'],
+        'roboto-slab-200': ['Roboto Slab ExtraLight', 'sans-serif'],
+        'roboto-slab-300': ['Roboto Slab Light', 'sans-serif'],
+        'roboto-slab-400': ['Roboto Slab Regular', 'sans-serif'],
+        'roboto-slab-500': ['Roboto Slab Medium', 'sans-serif'],
+        'roboto-slab-600': ['Roboto Slab SemiBold', 'sans-serif'],
+        'roboto-slab-700': ['Roboto Slab Bold', 'sans-serif'],
+        'roboto-slab-800': ['Roboto Slab ExtraBold', 'sans-serif'],
+        'roboto-slab-900': ['Roboto Slab Black', 'sans-serif'],
       },
     },
   },
   plugins: [],
-}
-export default config
+};
+export default config;

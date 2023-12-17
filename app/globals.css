@@ -2,26 +2,89 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: 'Roboto Slab Black';
+  src: url('../public/fonts/RobotoSlab-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: 'Roboto Slab Bold';
+  src: url('../public/fonts/RobotoSlab-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+  font-family: 'Roboto Slab ExtraBold';
+  src: url('../public/fonts/RobotoSlab-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Slab ExtraLight';
+  src: url('../public/fonts/RobotoSlab-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Slab Light';
+  src: url('../public/fonts/RobotoSlab-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Slab Medium';
+  src: url('../public/fonts/RobotoSlab-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Slab Regular';
+  src: url('../public/fonts/RobotoSlab-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Slab SemiBold';
+  src: url('../public/fonts/RobotoSlab-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Slab Thin';
+  src: url('../public/fonts/RobotoSlab-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 2rem; /* 32px (2 * 16px) */
+}
+
+h2 {
+  font-size: 1.5rem; /* 24px (1.5 * 16px) */
+}
+
+h3 {
+  font-size: 1.25rem; /* 20px (1.25 * 16px) */
+}
+
+h4 {
+  font-size: 1.125rem; /* 18px (1.125 * 16px) */
+}
+
+h5 {
+  font-size: 1rem; /* 16px (1 * 16px) */
+}
+
+h6 {
+  font-size: 0.875rem; /* 14px (0.875 * 16px) */
 }
