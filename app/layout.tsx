@@ -1,6 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Roboto_Slab } from 'next/font/google';
+import NavigationTop from './components/NavigationTop';
 
 const inter = Roboto_Slab({ subsets: ['latin'] });
 
@@ -16,14 +17,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-mainBlue`}>
-        <nav>
-          <div className="w-full text-right py-2 px-4 border-b-2 border-b-white border-dotted">
-            Menu
-          </div>
-        </nav>
-        {children}
-      </body>
+      <NavigationTop />
+      <body className={`${inter.className} bg-mainBlue`}>{children}</body>
     </html>
   );
 }

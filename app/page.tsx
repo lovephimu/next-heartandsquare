@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <main className="h-screen">
       {/* <!-- hero --> */}
-      <div className="w-full flex flex-col h-4/5 justify-center items-center">
+      <div className="w-full flex flex-col h-4/5 justify-center items-center text-textBlue">
         {/* <!-- {{ svg src="/logo/hands.svg" }} --> */}
         <Image
           alt="heart and square logo"
@@ -60,7 +60,7 @@ export default function Home() {
         </div>
       </div>
       {/* <!-- main content --> */}
-      <div className="bg-contrastBlue mx-auto px-2 min-h-[20%] flex flex-col items-center justify-center">
+      <div className="bg-contrastBlue mx-auto px-2 min-h-[20%] flex flex-col items-center justify-center text-mainBlue">
         <h1>Test</h1>
       </div>
     </main>

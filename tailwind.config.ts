@@ -9,10 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        mainBlue: '#6BF1F0',
-        transitionBlue: '#30B2DC',
-        contrastBlue: '#30B2DC',
-        textBlue: '#1D4775',
+        mainBlue: '#96B9D0', //primaryBlue
+        contrastBlue: '#005377',
+        textBlue: '#12293D',
         textYellow: '#F9E000',
       },
       fontFamily: {
