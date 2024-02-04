@@ -54,7 +54,17 @@ export default function HomePage() {
               <div className="w-1/2"></div>
               <div className="w-1/2 text-left">
                 <h4>by</h4>
-                <h3>Philipp Soeparno</h3>
+                <h3>
+                  <a
+                    className="priority-link"
+                    onClick={(e) => {
+                      e.preventDefault(); // Prevent default anchor link behavior
+                      scrollToRef(aboutRef);
+                    }}
+                  >
+                    Philipp Soeparno
+                  </a>
+                </h3>
               </div>
             </div>
             {/* <!-- content --> */}

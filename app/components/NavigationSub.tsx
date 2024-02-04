@@ -1,5 +1,7 @@
 'use client';
+import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
+import HandsIcon from '../../images/hands_icon.svg';
 
 export default function NavigationSub() {
   const [targetPosition, setTargetPosition] = useState(false);
@@ -46,12 +48,31 @@ export default function NavigationSub() {
   };
 
   return (
-    <section className="h-[25px] sticky-nav bg-secondBlue text-white px-4 sm:px-8 z-10">
-      <div
-        ref={navRef}
-        className={`effect-item ${targetPosition ? 'effect-item-change' : ''}`}
-      >
-        <a onClick={scrollToTop}>back up</a>
+    <section className="h-[36px] sticky-nav bg-secondBlue text-white px-4 sm:px-8 z-10">
+      <div className="h-full w-full flex justify-between items-center">
+        <div
+          ref={navRef}
+          className={`w-full flex justify-between effect-item ${
+            targetPosition ? 'effect-item-change' : ''
+          }`}
+        >
+          <div className="flex justify-center items-center h-[25px] w-[25px] rounded-full bg-firstBlue">
+            <a title="Home" href="/">
+              <Image
+                className="me-2"
+                width={18}
+                height={18}
+                alt="heart and square logo"
+                src="../../images/hands_icon.svg"
+              />
+            </a>
+          </div>
+          <div className="flex justify-center items-center h-[25px] w-[25px] rounded-full bg-firstBlue">
+            <a className="forward-top" onClick={scrollToTop}>
+              ⬆
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );

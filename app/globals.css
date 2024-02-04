@@ -70,6 +70,21 @@ a {
   text-decoration-color: #cfdfea;
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #d1495c;
+}
+
+.forward-top {
+  text-decoration: none !important;
+}
+
+.priority-link {
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;
 }
 
 h1 {
@@ -99,7 +114,7 @@ h6 {
 .sticky-block {
   position: -webkit-sticky;
   position: sticky;
-  top: 25px;
+  top: 40px;
 }
 .sticky-nav {
   position: -webkit-sticky;
@@ -114,4 +129,13 @@ h6 {
 
 .effect-item-change {
   opacity: 1;
+}
+
+.effect-picture {
+  opacity: 1;
+  transition: opacity 600ms ease-in-out;
+}
+
+.effect-picture-change {
+  opacity: 0;
 }
