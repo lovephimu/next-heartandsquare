@@ -1,7 +1,3 @@
-import Image from 'next/image';
-import ContentBlock from './components/ContentBlock';
-import ContentContainer from './components/ContentContainer';
-import Hero from './components/Hero';
 import HomePage from './HomePage';
 
 export default function Home() {
@@ -25,20 +21,6 @@ export default function Home() {
   */
   return (
     <main className="">
-      {/* <!-- hero --> */}
-      {/* <Hero />
-      <ContentContainer
-        title={'Building Interactive Tools'}
-        subTitle={'Programming'}
-      />
-      <ContentContainer
-        title={'Translating Ideas Into Reality'}
-        subTitle={'Architecture'}
-      />
-      <ContentContainer
-        title={'The Love Towards Geometry'}
-        subTitle={'Illustration'}
-      /> */}
       <HomePage />
     </main>
   );
