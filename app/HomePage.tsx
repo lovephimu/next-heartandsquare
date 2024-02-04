@@ -128,7 +128,7 @@ export default function HomePage() {
         stickyCat={2}
       />
       <ContentContainer
-        title={'The Love Towards Geometry'}
+        title={'A Love for Geometry'}
         subTitle={'Illustration'}
         ref={illustrationRef}
         category="Illustration"
