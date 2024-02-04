@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useRef } from 'react';
 import { Parallax } from 'react-scroll-parallax';
 import ContentContainer from './components/ContentContainer';
-import Hero from './components/Hero';
+import ContentBlockAlt from './components/ContentContainerAlt';
 import NavigationSub from './components/NavigationSub';
 import { staticData } from './variables/staticData';
 
@@ -12,6 +12,7 @@ export default function HomePage() {
   const programmingRef = useRef<HTMLDivElement>(null);
   const architectureRef = useRef<HTMLDivElement>(null);
   const illustrationRef = useRef<HTMLDivElement>(null);
+  const aboutRef = useRef<HTMLDivElement>(null);
 
   const scrollToRef = (ref: React.RefObject<HTMLDivElement>) => {
     // Browser supports scrollIntoView options
@@ -22,7 +23,7 @@ export default function HomePage() {
   return (
     <>
       {/* <!-- hero --> */}
-      <section className="h-[100dvh]">
+      <section className="h-[100dvh] overflow-hidden relative">
         <Parallax className="h-[85%]" speed={-20}>
           <div className="w-full flex flex-col h-full justify-center items-center text-thirdBlue">
             {/* <!-- {{ svg src="/logo/hands.svg" }} --> */}
@@ -95,7 +96,7 @@ export default function HomePage() {
           </div>
         </Parallax>
         {/* <!-- teaser top --> */}
-        <div className="bg-secondBlue mx-auto px-2 min-h-[15%] flex flex-col items-center justify-center text-firstBlue">
+        <div className="bg-secondBlue mx-auto px-2 min-h-[15%] flex flex-col items-center justify-center text-firstBlue relative z-10">
           {/* <h1 className="m-10">Test</h1> */}
         </div>
       </section>
@@ -124,6 +125,7 @@ export default function HomePage() {
         text={staticData.programming.text}
         stickyCat={3}
       />
+      <ContentBlockAlt ref={aboutRef} />
     </>
   );
 }

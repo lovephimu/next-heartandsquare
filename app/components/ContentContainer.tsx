@@ -1,5 +1,4 @@
 import React from 'react';
-import { staticData } from '../variables/staticData';
 import ChapterLogo from './ChapterLogo';
 
 type Props = {
