@@ -129,7 +129,7 @@ export default function HomePage() {
       />
       <ContentContainer
         title={'A Love for Geometry'}
-        subTitle={'Illustration'}
+        subTitle={'How Simple Lines Convey Complex Meanings'}
         ref={illustrationRef}
         category="Illustration"
         text={staticData.illustration.text}
