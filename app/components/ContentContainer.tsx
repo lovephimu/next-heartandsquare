@@ -10,7 +10,7 @@ type Props = {
 };
 
 const ContentBlock = React.forwardRef<HTMLDivElement, Props>(
-  ({ title, subTitle, category, text }, ref) => {
+  ({ title, subTitle, category, text, stickyCat }, ref) => {
     return (
       <section
         ref={ref}
@@ -18,10 +18,18 @@ const ContentBlock = React.forwardRef<HTMLDivElement, Props>(
       >
         <div className="w-full flex flex-col items-center mb-5 sticky-block">
           <h6>{category}</h6>
-          <ChapterLogo />
+          <ChapterLogo category={stickyCat} />
           <h2>{title}</h2>
           <p>{subTitle}</p>
-          <div className="mt-8 mb-10 max-w-[750px]">{text[0]}</div>
+          <div className="mt-8">
+            {text.map((textItem, index) => {
+              return (
+                <div key={`p-${index}`} className=" mb-4 max-w-[750px]">
+                  {textItem}
+                </div>
+              );
+            })}
+          </div>
         </div>
       </section>
     );

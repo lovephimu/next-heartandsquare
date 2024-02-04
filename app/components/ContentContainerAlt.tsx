@@ -1,15 +1,10 @@
 'use client';
 import Image from 'next/image';
 import React, { useEffect, useRef, useState } from 'react';
-import { useParallax } from 'react-scroll-parallax';
 
 type Props = {};
 
 const ContentBlockAlt = React.forwardRef<HTMLDivElement, Props>(({}, ref) => {
-  const mage = useParallax<HTMLDivElement>({
-    scale: [0.7, 1, 'easeInQuad'],
-  });
-
   const [targetPosition, setTargetPosition] = useState(false);
 
   // Create a ref with an initial value of null
@@ -61,26 +56,25 @@ const ContentBlockAlt = React.forwardRef<HTMLDivElement, Props>(({}, ref) => {
           <div className="w-full flex justify-center mt-1 pt-1 border-dashed border-t-2 border-thirdBlue"></div>
         </div>
         <div className="w-full flex flex-col items-center p-4 sm:p-8 max-w-[750px] ">
-          <div className="w-full flex justify-center" ref={mage.ref}>
-            <div
-              ref={picRef}
-              className={`w-full  flex justify-center effect-picture ${
-                targetPosition ? 'effect-picture-change' : ''
-              }`}
-            >
-              <Image
-                alt="Photo of me!"
-                src={`/images/foto.jpeg`}
-                width={100}
-                height={100}
-                style={{
-                  width: '100%',
-                  height: 'auto',
-                }}
-                className="rounded-full p-8 max-w-[350px]"
-              />
-            </div>
+          <div
+            ref={picRef}
+            className={`w-full  flex justify-center effect-picture ${
+              targetPosition ? 'effect-picture-change' : ''
+            }`}
+          >
+            <Image
+              alt="Photo of me!"
+              src={`/images/foto.jpeg`}
+              width={100}
+              height={100}
+              style={{
+                width: '100%',
+                height: 'auto',
+              }}
+              className="rounded-full p-8 max-w-[350px]"
+            />
           </div>
+
           <h1>Hi! 👋</h1>
           <h3 className="text-xs mb-8">...about me...</h3>
           <h3 className="font-roboto-slab-600">From Architecture to Coding</h3>

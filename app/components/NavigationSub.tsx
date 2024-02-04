@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
-import HandsIcon from '../../images/hands_icon.svg';
+import ArrowUp from '../../public/images/arrowUp.svg';
 
 export default function NavigationSub() {
   const [targetPosition, setTargetPosition] = useState(false);
@@ -56,20 +56,29 @@ export default function NavigationSub() {
             targetPosition ? 'effect-item-change' : ''
           }`}
         >
-          <div className="flex justify-center items-center h-[25px] w-[25px] rounded-full bg-firstBlue">
-            <a title="Home" href="/">
-              <Image
-                className="me-2"
-                width={18}
-                height={18}
-                alt="heart and square logo"
-                src="../../images/hands_icon.svg"
-              />
-            </a>
+          <div className="flex">
+            <div className="flex justify-center items-center h-[25px] w-[25px] rounded-full bg-firstBlue me-2">
+              <a title="Home" href="/">
+                <Image
+                  className="me-1"
+                  width={18}
+                  height={18}
+                  alt="heart and square logo"
+                  src="../../images/hands_icon.svg"
+                />
+              </a>
+            </div>
+            <div>heart & square</div>
           </div>
-          <div className="flex justify-center items-center h-[25px] w-[25px] rounded-full bg-firstBlue">
-            <a className="forward-top" onClick={scrollToTop}>
-              ⬆
+          <div className="flex justify-center items-center h-[25px] w-[25px] rounded-full bg-thirdBlue">
+            <a className="forward-top text-center" onClick={scrollToTop}>
+              <Image
+                className=""
+                width={15}
+                height={15}
+                alt="heart and square logo"
+                src="/images/arrowUp.svg"
+              />
             </a>
           </div>
         </div>

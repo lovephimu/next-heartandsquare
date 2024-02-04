@@ -23,7 +23,7 @@ export default function HomePage() {
   return (
     <>
       {/* <!-- hero --> */}
-      <section className="h-[100dvh] overflow-hidden relative">
+      <section className="h-[100vh] overflow-hidden relative">
         <Parallax className="h-[85%]" speed={-20}>
           <div className="w-full flex flex-col h-full justify-center items-center text-thirdBlue">
             {/* <!-- {{ svg src="/logo/hands.svg" }} --> */}
@@ -121,10 +121,10 @@ export default function HomePage() {
       />
       <ContentContainer
         title={'Translating Ideas Into Reality'}
-        subTitle={'Architecture'}
+        subTitle={'Navigating the Creative Process'}
         ref={architectureRef}
         category="Architecture"
-        text={staticData.programming.text}
+        text={staticData.architecture.text}
         stickyCat={2}
       />
       <ContentContainer
@@ -132,7 +132,7 @@ export default function HomePage() {
         subTitle={'Illustration'}
         ref={illustrationRef}
         category="Illustration"
-        text={staticData.programming.text}
+        text={staticData.illustration.text}
         stickyCat={3}
       />
       <ContentBlockAlt ref={aboutRef} />

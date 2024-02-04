@@ -114,8 +114,17 @@ h6 {
 .sticky-block {
   position: -webkit-sticky;
   position: sticky;
-  top: 40px;
+  top: 100px;
 }
+
+@media (max-width: 566px) {
+  .sticky-block {
+    position: -webkit-sticky;
+    position: relative;
+    top: 0;
+  }
+}
+
 .sticky-nav {
   position: -webkit-sticky;
   position: sticky;
@@ -133,7 +142,7 @@ h6 {
 
 .effect-picture {
   opacity: 1;
-  transition: opacity 600ms ease-in-out;
+  transition: opacity 400ms;
 }
 
 .effect-picture-change {
