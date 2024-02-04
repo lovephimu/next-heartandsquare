@@ -65,6 +65,13 @@
   font-style: normal;
 }
 
+a {
+  text-decoration: underline;
+  text-decoration-color: #cfdfea;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
 h1 {
   font-size: 2rem; /* 32px (2 * 16px) */
 }
@@ -87,4 +94,24 @@ h5 {
 
 h6 {
   font-size: 0.875rem; /* 14px (0.875 * 16px) */
+}
+
+.sticky-block {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 25px;
+}
+.sticky-nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.effect-item {
+  opacity: 0;
+  transition: opacity 600ms ease-in-out;
+}
+
+.effect-item-change {
+  opacity: 1;
 }

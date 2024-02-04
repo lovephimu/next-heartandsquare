@@ -9,10 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        mainBlue: '#96B9D0', //primaryBlue
-        contrastBlue: '#005377',
-        textBlue: '#12293D',
-        textYellow: '#F9E000',
+        firstBlue: '#96B9D0', //primaryBlue
+        secondBlue: '#005377',
+        thirdBlue: '#12293D',
       },
       fontFamily: {
         'roboto-slab-100': ['Roboto Slab Thin', 'sans-serif'],
