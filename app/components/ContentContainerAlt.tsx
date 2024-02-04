@@ -70,7 +70,7 @@ const ContentBlockAlt = React.forwardRef<HTMLDivElement, Props>(({}, ref) => {
             >
               <Image
                 alt="Photo of me!"
-                src={`/../../images/foto.jpeg`}
+                src={`/images/foto.jpeg`}
                 width={100}
                 height={100}
                 style={{
